@@ -17,5 +17,5 @@ CREATE TABLE IF NOT EXISTS `login` (
 
 -- Volcando datos para la tabla prueba_login
 INSERT INTO `login` (`id_user`, `nombre_completo`, `nombre_usuario`, `clave`, `email`, `tipo`) VALUES
-	(1, 'Sandor Luque Farfan', 'administrador', 'e10adc3949ba59abbe56e057f20f883e', 'administrador@administrador.com', 'admin'),
+	(1, 'Sandor Luque Farfan', 'sanditor', 'e10adc3949ba59abbe56e057f20f883e', 'administrador@administrador.com', 'admin'),
 	(10, 'Pedro Buitrago', 'pedrito', 'e10adc3949ba59abbe56e057f20f883e', 'pedrito@pedrito.com', 'user');

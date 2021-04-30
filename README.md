@@ -17,7 +17,7 @@ Credenciales:
 
 Administrador:
 
-USUARIO: Administrador
+USUARIO: sanditor
 CLAVE: 123456
 
 usuario:

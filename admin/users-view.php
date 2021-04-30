@@ -59,6 +59,11 @@
                 <br>
                 <div class="row">
                     <div class="col-md-12">
+                        <div style="margin-top: 10px; margin-bottom: 10px">                                
+                             
+                             <a href="index.php?view=registro" class="btn btn-lg btn-success" title="agregar Usuario">&nbsp;&nbsp;Agregar Usuario&nbsp;&nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></a>  
+
+                        </div>
                         <div class="table-responsive">
                             <?php 
                                 $mysqli = mysqli_connect(SERVER, USER, PASS, BD);
@@ -76,6 +81,8 @@
                                 $numeropaginas = ceil($totalregistros["FOUND_ROWS()"]/$regpagina);
                                 if(mysqli_num_rows($selusers)>0):
                             ?>
+
+
                             <table class="table table-hover table-striped table-bordered">
                                 <thead>
                                     <tr>
@@ -96,10 +103,7 @@
                                         <td class="text-center"><?php echo $row['nombre_completo']; ?></td>
                                         <td class="text-center"><?php echo $row['nombre_usuario']; ?></td>
                                         <td class="text-center"><?php echo $row['email']; ?></td>
-                                        <td class="text-center">
-
-                                           
-                                           <a href="index.php?view=registro" class="btn btn-sm btn-success" title="agregar"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>     
+                                        <td class="text-center">   
 
                                            <a href="index.php?view=users-edit&id_user=<?php echo $row['id_user']; ?>" class="btn btn-sm btn-warning" title="actualizar"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 

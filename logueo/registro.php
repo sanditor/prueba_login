@@ -40,7 +40,16 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <?php if (@$_SESSION['tipo'] == "admin") { ?>
+    <div class="col-sm-8" style="margin-top: 10px; margin-bottom: 10px">
+       <a href="index.php?view=users" class="btn btn-primary btn-sm pull-right"><i class="fa fa-reply"></i>&nbsp;&nbsp;Volver administrar usuarios</a>
+     </div>
+    <?php } else if (!isset($_SESSION['tipo'])) { ?>
+      <div class="col-sm-8" style="margin-top: 10px; margin-bottom: 10px">
+       <a href="index.php" class="btn btn-primary btn-sm pull-right"><i class="fa fa-reply"></i>&nbsp;&nbsp;Volver al inicio</a>
+     </div>
+    <?php } ?> 
+    <div class="col-sm-8">      
       <div class="panel panel-success">
         <div class="panel-heading text-center"><strong>Para poder registrarte debes de llenar todos los campos de este formulario</strong></div>
         <div class="panel-body">

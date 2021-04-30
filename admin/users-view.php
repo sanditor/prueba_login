@@ -90,6 +90,7 @@
                                         <th class="text-center">Nombre completo</th>
                                         <th class="text-center">Nombre de usuario</th>
                                         <th class="text-center">Email</th>
+                                        <th class="text-center">Tipo Usuario</th>
                                         <th class="text-center">Opciones</th>
                                     </tr>
                                 </thead>
@@ -103,6 +104,7 @@
                                         <td class="text-center"><?php echo $row['nombre_completo']; ?></td>
                                         <td class="text-center"><?php echo $row['nombre_usuario']; ?></td>
                                         <td class="text-center"><?php echo $row['email']; ?></td>
+                                        <td class="text-center"><?php echo $row['tipo']; ?></td>
                                         <td class="text-center">   
 
                                            <a href="index.php?view=users-edit&id_user=<?php echo $row['id_user']; ?>" class="btn btn-sm btn-warning" title="actualizar"><i class="fa fa-pencil" aria-hidden="true"></i></a>

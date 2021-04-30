@@ -21,6 +21,8 @@
 
 
 <!-- Boostrap 3.3.7  -->
-<script src="./js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 
-<script src="./js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+
+<script src="js/main.js"></script>

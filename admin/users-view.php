@@ -106,11 +106,9 @@
                                         <td class="text-center">   
 
                                            <a href="index.php?view=users-edit&id_user=<?php echo $row['id_user']; ?>" class="btn btn-sm btn-warning" title="actualizar"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-
-                                            <form action="" method="POST" style="display: inline-block;">
-                                                <input type="hidden" name="id_del" value="<?php echo $row['id_user']; ?>">
-                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash-o" aria-hidden="true" title="eliminar"></i></button>
-                                            </form>
+                                   
+                                           <a id="user_del" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modalDel" data-id_user="<?= $row['id_user'];  ?>"><i class="fa fa-trash-o" aria-hidden="true" title="eliminar"></i></a>
+                                           
                                         </td>
                                     </tr>
                                     <?php
@@ -171,6 +169,28 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="modal fade" tabindex="-1" role="dialog" id="modalDel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title text-center text-primary" id="myModalLabel">Bienvenido a SoporteSystem</h4>
+                        </div>
+                        <h4>¿Esta seguro de eliminar el usuario?</h4>
+                        <form action="" method="POST" style="margin: 20px;">
+
+                          <input type="hidden" name="id_del">
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-sm">Si Eliminar</button>
+                            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancelar</button>
+                          </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
 <?php
 }else{
 ?>
@@ -188,6 +208,7 @@
                 <div class="col-sm-1">&nbsp;</div>
             </div>
         </div>
+        
 <?php
 }
 ?>

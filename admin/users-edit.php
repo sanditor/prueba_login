@@ -61,7 +61,7 @@
                         <label  class="col-sm-2 control-label">Nombre Completo</label>
                         <div class="col-sm-10">
                             <div class='input-group'>
-                                <input type="text" class="form-control"  name="nombre_completo"  value="<?php echo $reg['nombre_completo']?>">
+                                <input type="text" class="form-control"  name="nombre_completo"  value="<?php echo $reg['nombre_completo']?>" required="" pattern="[a-zA-Z ]{1,40}" title="Nombre completo sin acentos">
                               <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         <label  class="col-sm-2 control-label">Nombre Usuario</label>
                         <div class="col-sm-10">
                             <div class='input-group'>
-                                <input type="text" class="form-control"  name="nombre_usuario" value="<?php echo $reg['nombre_usuario']?>">
+                                <input type="text" class="form-control" required="" pattern="[a-zA-Z0-9]{1,15}" title="Ejemplo: maximo 15 caracteres" name="nombre_usuario" value="<?php echo $reg['nombre_usuario']?>">
                               <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             </div>
                         </div>

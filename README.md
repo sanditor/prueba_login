@@ -15,7 +15,7 @@ del servidor. El archivo se encuentra en la carpeta “lib”
 
 Credenciales:
 
-Administrador:
+Administrador: Puede administrar otros usuarios y administradores y allí está el CRUD pedido
 
 USUARIO: sanditor
 CLAVE: 123456

@@ -6,7 +6,7 @@
         $clave_reg=md5(MysqlQuery::RequestPost('clave_reg'));
         $tipo_usuario=MysqlQuery::RequestPost('tipo_usuario');
         
-        if ($_SESSION['tipo'] == "admin") { 
+        if ($tipo_usuario == "admin") { 
           $tipo_reg="admin";
         } else {
           $tipo_reg="user";
